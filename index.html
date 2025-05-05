@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>私のポートフォリオ</title>
-  <link rel="stylesheet" href="./index.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
   <header>
-    <h1>私のポートフォリオサイトへようこそ！</h1>
+    <h1 class="site-title">My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">自己紹介</a></li>
+        <li><a href="#works">制作実績</a></li>
+        <li><a href="#contact">連絡先</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <p>以下が私が過去に作った（模写した）作品です。</p>
-     <p><a href="roadbike.html" target="_blank">roadbike</a></p>
-      <p><a href="photobook.html" target="_blank">photobook</a></p> 
-      <p><a href="photobook2.html" target="_blank">photobook2</a></p>
-      <p><a href="recipe.html" target="_blank">recipe</a></p> 
-      <p><a href="my-work.html" target="_blank">my-work</a></p> 
-    
+    <section id="about" class="section">
+      <h2>自己紹介</h2>
+      <p>はじめまして。大学生としてWeb制作を学び、HTML/CSSを中心に制作を行っています。現在はフリーランスとして実績を積むことを目標にしています。</p>
+    </section>
+
+    <section id="works" class="section">
+      <h2>制作実績</h2>
+      <div class="works-grid">
+        <div class="work-item">
+          <img src="roadbike/img/mainvisual.jpg" alt="作品1">
+          <p><a href="roadbike.html" target="_blank">作品1を見る</a></p>
+        </div>
+        <div class="work-item">
+          <img src="img/mainvisual.jpg" alt="作品2">
+          <p><a href="photobook.html" target="_blank">作品2を見る</a></p>
+        </div>
+        <div class="work-item">
+          <img src="photobook2 img/mainvisual2.jpg" alt="作品3">
+          <p><a href="photobook2.html" target="_blank">作品3を見る</a></p>
+        </div>
+        <div class="work-item">
+          <img src="recipe-img/img/mainvisual.jpg" alt="作品4">
+          <p><a href="recipe.html" target="_blank">作品4を見る</a></p>
+        </div>
+        <div class="work-item">
+          <picture>
+            <source media="(max-width:600px)" srcset="my-work-img/img/mainvisual-sp.jpg">
+            <img src="my-work-img/img/mainvisual-pc.jpg" alt="作品5">
+        </picture>
+          <p><a href="my-work.html" target="_blank">作品5を見る</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>連絡先</h2>
+      <p>クラウドワークスのプロフィールからご連絡ください。</p>
+      <p><a href="https://crowdworks.jp/public/employees/6296802?ref=from_mobile_slide_menu" target="_blank">クラウドワークスのプロフィール</a></p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 颯野</p>
+    <small>&copy; 2025 My Portfolio</small>
   </footer>
 </body>
 </html>
