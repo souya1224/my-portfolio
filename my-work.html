@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="テキストテキストテキスト">
+        <title>My Work</title>
+        <link rel="icon" href="my-work-img/img/favicon.ico">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="./my-work.css">
+    </head>
+
+    <body>
+        <header id="header">
+            <h1 class="site-title"><a href="index.html"><img src="my-work-img/img/logo.svg" alt="My Work"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img class="icon" src="my-work-img/img/icon-instagram.png" alt="Instagram">
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="mainvisual">
+                <picture>
+                    <source media="(max-width:600px)" srcset="my-work-img/img/mainvisual-sp.jpg">
+                    <img src="my-work-img/img/mainvisual-pc.jpg" alt="">
+                </picture>
+            </div>
+
+            <section id="about" class="wrapper">
+                <h2 class="sec-title">About</h2>
+                <ul>
+                    <li>Xxxxx Ashley</li>
+                    <li>2th Floor xxxx Building x-x-x Nishiazabu, Tokyo 106-0031 Japan</li>
+                    <li>tel:000-0000-0000</li>
+                    <li>url: www.xxxxx.jp</li>
+                    <li>mail:xxx@xxxxx.jp</li>
+                </ul>
+                <p>プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                </p>
+            </section>
+
+            <section id="work" class="wrapper">
+                <h2 class="sec-title">Work</h2>
+                    <ul>
+                        <li><img src="my-work-img/img/works1.jpg" alt=""></li>
+                        <li><img src="my-work-img/img/works2.jpg" alt=""></li>
+                        <li><img src="my-work-img/img/works3.jpg" alt=""></li>
+                        <li><img src="my-work-img/img/works4.jpg" alt=""></li>
+                        <li><img src="my-work-img/img/works5.jpg" alt=""></li>
+                        <li><img src="my-work-img/img/works6.jpg" alt=""></li>   
+                    </ul>
+            </section>
+
+            <section id="news" class="wrapper">
+                <h2 class="sec-title">News</h2>
+                <dl>
+                    <dt>2020.XX.XX</dt><dd>デザイン雑誌「XXXXXX Vol.11]に掲載していただきました。</dd>
+                    <dt>2020.XX.XX</dt><dd>XX月XX日から写真集「XXXXXX」の販売を開始します。</dd>
+                    <dt>2019.XX.XX</dt><dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキスト</dd>
+                    <dt>2019.XX.XX</dt><dd>デザイン雑誌「XXXXX Vol.10」に掲載していただきました。</dd>
+                    <dt>2019.XX.XX</dt><dd>【個展開催のお知らせ】テキスト</dd>
+                </dl>
+            </section>
+
+            <section id="contact" class="wrapper">
+                <h2 class="sec-title">Contact</h2>
+                <form action="#" method="post">
+                    <dl>
+                    <dt><label for="name">NAME</label></dt>
+                    <dd><input type="text" id="name" name="your-name"></dd>
+                    <dt><label for="email">E-mail</label></dt>
+                    <dd><input type="email" id="email" name="your-email"></dd>
+                    <dt><label for="message">MESSAGE</label></dt>
+                    <dd><textarea name="your-message" id="message"></textarea></dd>
+                    </dl>
+                    <div class="button"><input type="submit" value="送信"></div>
+                </form>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <p>&copy;2020 My Work</p>
+        </footer>
+    </body>
