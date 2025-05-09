@@ -140,7 +140,7 @@ ul{
     #detail .flex{
         flex-direction: column;
     }
-    #detail dl{
+    #detail .flex dl{
         width: 100%;
         border-right: none;
         border-bottom: solid 1px #333;
