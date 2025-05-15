@@ -12,65 +12,75 @@
 
     <body>
         <header>
-            <img src="storesite/mainvisual.jpg" alt="">
-            <h1 class="mag88"><img src="storesite/logo.svg" alt=""></h1>
+            <img id="header" src="storesite/mainvisual.jpg" alt="">
+            <h1 class="mag88" ><img src="storesite/logo.svg" alt=""></h1>
         </header>
         <main>
-            <section id="magazine">
-                <h2>A special, long article in a newspaper or magazine</h2>
-                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                <div>
-                    <a href="#"> <img src="storesite/magazine-archive.jpg" alt="">
-                        <div>
-                            <p>Archive</p>
-                            <p>テキストテキストテキストテキストテキストテキスト</p>
+            <section id="magazine" class="wrapper">
+                <h2 class="title">A special, long article in a newspaper or magazine</h2>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <div  class="fhoto">
+                    <a class="item" href="#"> 
+                        <img src="storesite/magazine-archive.jpg" alt="">
+                        <div class="text">
+                            <p class="titlemin">Archive</p>
+                            <p>テキストテキストテキストテキスト<br>
+                                テキストテキストテキスト</p>
                         </div>
                     </a>
-                    <a href="#"><img src="storesite/magazine-new.jpg" alt="">
-                        <div>
-                            <p>New</p>
-                            <p>テキストテキストテキストテキストテキストテキスト</p>
+                    <a class="item" href="#">
+                        <img src="storesite/magazine-new.jpg" alt="">
+                        <div class="text">
+                            <p class="titlemin">New</p>
+                            <p>テキストテキストテキストテキスト<br>
+                                テキストテキストテキスト</p>
                         </div>
                     </a>
                 </div>
             </section>
-            <section id="fashion"><img src="storesite/fashion.jpg" alt="">
-                <h2>Fashion & Style</h2>
-                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                <a href="#">Read More</a>
+            <section id="fashion">
+                <div class="wrapper">
+                <h2 class="title">Fashion & Style</h2>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <a class="btn" href="#">Read More</a>
+                </div>
             </section>
             <section class="catalog-antique">
-                <div>
-                    <div>
+                <div class="flex-item wrapper">
+                    <div class="item">
                         <img src="storesite/catalog.jpg" alt="">
                     </div>
-                    <div>
-                        <h2>Catalog</h2>
-                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <div class="item">
+                        <h2 class="title">Catalog</h2>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </div>
                 </div>
             </section>
             <section class="catalog-antique">
-                <div>
-                    <div>
-                        <h2>Antique</h2>
-                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        <a href="#">Read More</a>
+                <div class="flex-item wrapper">
+                    <div class="item">
+                        <h2 class="title">Antique</h2>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        <a class="btn" href="#">Read More</a>
                     </div>
-                    <div>
+                    <div class="item">
                         <img src="storesite/antique.jpg" alt="">
                     </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <div>
-                <div><img src="storesite/logo.svg" alt=""></div>
-                <div>
-                    <p>タイトル</p>
+        <footer id="footer">
+            <div class="end wrapper">
+                <div class="mag">
+                    <a href="#"><img src="storesite/logo.svg" alt=""></a>
+                </div>
+                <div class="mag">
+                    <p class="titlemin">タイトル</p>
                     <ul>
                         <li>テキストテキストテキスト</li>
                         <li>テキストテキストテキスト</li>
@@ -79,11 +89,11 @@
                         <li>テキストテキストテキスト</li>
                     </ul>
                 </div>
-                <div>
-                    <p>タイトルタイトルタイトル</p>
+                <div class="mag">
+                    <p class="titlemin">タイトルタイトルタイトル</p>
                     <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </div>
             </div>
-            <p>&copy;Mag88</p>
+            <p class="copyright">&copy;Mag88</p>
         </footer>
     </body>

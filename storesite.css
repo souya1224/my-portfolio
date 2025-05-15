@@ -4,14 +4,20 @@ html{
     font-size: 100%;
 }
 body{
-    color: #24292e;
+    font-family: "Arial", "Hiragino Sans" ,  "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    color: #2a2a2a;
+    font-size: 0.875rem;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.7;
 }
 img{
     max-width: 100%;
 }
-p{
-    margin-bottom: 30px;
-}
+
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
@@ -20,9 +26,10 @@ p{
 .btn{
     color: #24292e;
     border: solid 1px #2a2a2a;
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    text-decoration: none;
+    display: inline-block;
+    padding: 14px 36px;
+    font-size: 0.750rem;
+    margin-top: 30px;
 }
 
 #header{
@@ -102,34 +109,84 @@ p{
     width: 49%;
     text-align: center;
 }
-.end{
+.catalog-antique .flex-item .item p{
+    margin-bottom: 30px;
+}
+#footer{
     background-color: #333;
-    height: 350px;
+    font-size: 0.750rem;
+}
+#footer .end{
     display: flex;
-}
-.mag{
-    margin: 150px 0;
-    width: calc(100%/3);
-}
-.last-title{
+    justify-content: space-between;
     color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#footer .mag{
+    line-height: 2;
     width: calc(100%/3);
 }
-.last-title ul{
-    list-style: none;
-    padding-left: 0;
+#footer .mag:first-child{
+    padding: 60px 0;
 }
-.last-title ul li::before{
-    content: "- ";
+#footer .mag li{
+    list-style-type: none;
 }
-.last-title2{
-    color: #fff;
-    width: calc(100%/3);
+#footer .mag li::before{
+    content: "-";
+    margin-right: 5px;
+}
+#footer .mag .titlemin{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 .copyright{
     text-align: center;
-    margin: 30px 0;
+    padding: 30px 0;
     font-size: 0.75rem;
     background-color: #fff;
 }
 
+
+@media screen and (max-width: 896px) {
+    #magazine .fhoto{
+        flex-direction: column;
+    }
+    #magazine .fhoto .item{
+        width: 100%;
+    }
+    #magazine .fhoto .item:first-child{
+        margin-bottom: 30px;
+    }
+    #fashion{
+        padding-top: 35px;
+        margin-bottom: 50px;
+    }
+    .catalog-antique{
+        padding-top: 30px;
+    }
+    .catalog-antique .flex-item{
+        flex-direction: column;
+    }
+    .catalog-antique .flex-item .item{
+        width: 100%;
+    }
+    .catalog-antique .flex-item .item:first-child{
+        margin-bottom: 60px;
+    }
+    #footer .end{
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #footer .end .mag{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #footer .end .mag:first-child{
+        text-align: center;
+        padding: 0;
+    }
+}
